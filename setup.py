@@ -31,8 +31,6 @@ with open("README.md", "r") as fh:
 
 if os.name == 'nt':
     compile_args = {'gcc': ['/Qstd=c99']}
-else:
-    compile_args = ['-Wno-cpp']
 
 ext_modules = [
     Extension(
